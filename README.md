@@ -1,3 +1,5 @@
+[![Docker Image CI](https://github.com/amitkarpe/tools/actions/workflows/docker-image.yml/badge.svg)](https://github.com/amitkarpe/tools/actions/workflows/docker-image.yml)
+
 # tools
 
 Alpine based tiny docker image for troubleshooting.
