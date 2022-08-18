@@ -1,4 +1,4 @@
-name: Build and Psuh in Docker repository
+name: 2 Build and Psuh in Docker repository
 
 on:
   push:
