@@ -15,11 +15,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 #    - name: Build the Docker image
-#      run: docker build . --file Dockerfile --tag amitkarpe/nginx:$(date +%s)
+#      run: docker build . --file Dockerfile --tag amitkarpe/tiny:$(date +%s)
     - name: Docker build and push
       uses: docker/build-push-action@v1
       with:
         username: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
         repository: amitkarpe/tiny
-        tags: v4
+        tags: $(date +%s)
