@@ -1,4 +1,4 @@
-FROM alpine:3.11.5
+FROM alpine:3.14
 
 RUN apk update 
 RUN apk --no-cache add bind-tools busybox-extras curl wget git 
