@@ -1,4 +1,4 @@
-name: ci
+name: Build and Psuh in Docker repository
 
 on:
   push:
