@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ master ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ master ]
 
 jobs:
 
@@ -13,6 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag amitkarpe/tiny:$(date +%s)
+    - uses: actions/checkout@v2
+#    - name: Build the Docker image
+#      run: docker build . --file Dockerfile --tag amitkarpe/nginx:$(date +%s)
+    - name: Docker build and push
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{ secrets.USER }}
+        password: ${{ secrets.PASS }}
+        repository: amitkarpe/tiny
+        tags: v4
