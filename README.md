@@ -1,4 +1,4 @@
-[![Docker Image CI](https://github.com/amitkarpe/tools/actions/workflows/docker-image.yml/badge.svg)](https://github.com/amitkarpe/tools/actions/workflows/docker-image.yml)
+[![Docker Image CI](https://github.com/amitkarpe/tools/actions/workflows/docker-image2.yml/badge.svg)](https://github.com/amitkarpe/tools/actions/workflows/docker-image2.yml)
 
 # tools
 
