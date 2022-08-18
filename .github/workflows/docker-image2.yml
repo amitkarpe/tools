@@ -28,4 +28,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/tiny:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/tiny:latest, ${{ secrets.DOCKERHUB_USERNAME }}/tiny:new
