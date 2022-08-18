@@ -22,4 +22,4 @@ jobs:
         username: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
         repository: amitkarpe/tiny
-        tags: $(date +%s)
+        tags: amd64
